@@ -81,11 +81,14 @@ class BilibiliApp(tk.Tk):
     def __init__(self):
         # 初始化父类构造器
         super().__init__()
+        # 加载图标文件
+        self.iconbitmap('../ico/Bilibili.ico')
         # 设置窗口标题和大小
         self.title('Bilibili视频下载器')
         self.geometry('500x300')
         # 创建窗口组件
         self.create_widgets()
+
 
     def update_progress(self, downloaded, total_length):
         # 根据下载的字节数和总字节数更新进度条的值
